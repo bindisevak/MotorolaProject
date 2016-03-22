@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+   <welcome-file-list>
+		
+		<welcome-file>index.jsp</welcome-file>
+		
+	</welcome-file-list>
+	
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ErrorControlling</display-name>
+  	<servlet-name>ErrorControlling</servlet-name>
+  	<servlet-class>com.monitor.controller.ErrorControlling</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ErrorDetailsControlling</display-name>
+  	<servlet-name>ErrorDetailsControlling</servlet-name>
+  	<servlet-class>com.monitor.controller.ErrorDetailsControlling</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>LoginController</display-name>
+  	<servlet-name>LoginController</servlet-name>
+  	<servlet-class>com.monitor.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>MonitorController</display-name>
+  	<servlet-name>MonitorController</servlet-name>
+  	<servlet-class>com.monitor.controller.MonitorController</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>ModuleController</display-name>
+  	<servlet-name>ModuleController</servlet-name>
+  	<servlet-class>com.monitor.controller.ModuleController</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SearchControlling</display-name>
+  	<servlet-name>SearchControlling</servlet-name>
+  	<servlet-class>com.monitor.controller.SearchControlling</servlet-class>
+  </servlet>
+	
+  
+	<servlet-mapping>
+		<servlet-name>ErrorControlling</servlet-name>
+		<url-pattern>/ErrorControlling</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorDetailsControlling</servlet-name>
+		<url-pattern>/ErrorDetailsControlling</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MonitorController</servlet-name>
+		<url-pattern>/MonitorController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ModuleController</servlet-name>
+		<url-pattern>/ModuleController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchControlling</servlet-name>
+		<url-pattern>/SearchControlling</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
